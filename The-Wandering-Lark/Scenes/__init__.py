@@ -9,7 +9,7 @@ from .caerham import caerham
 from .gameoverScene import gameoverScene
 from .inn import inn
 from .patrol import patrol
-from .shop import shop
+from .harveysHouse import harveysHouse
 from .howToScene import howToScene
 from .credits import credits
 

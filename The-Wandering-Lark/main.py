@@ -19,7 +19,7 @@ def main():
               "gameoverScene": gameoverScene(surface),
               "inn": inn(surface,player),
               "patrol": patrol(surface,5,player),
-              "shop": shop(surface),
+              "harveys": harveysHouse(surface),
               "howToScene": howToScene(surface),
               "credits": credits(surface)}
     

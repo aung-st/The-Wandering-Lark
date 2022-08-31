@@ -60,7 +60,7 @@ although that is a rare thing these days.\"""")
             self.change_scene("inn")
         if key == pygame.K_2:
             self.reset_text()
-            self.change_scene("shop")
+            self.change_scene("harveys")
         if key == pygame.K_3:
             self.reset_text()
             self.change_scene("patrol")
