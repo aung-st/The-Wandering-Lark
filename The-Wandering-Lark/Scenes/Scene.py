@@ -1,7 +1,9 @@
 import pygame
 
 class Scene:
+
     def __init__(self, surface):
+
         self.objects = [] # can't think of a better name. Things to draw basically
         self.surface = surface
 
@@ -13,10 +15,13 @@ class Scene:
         
 
     def add_object(self, _object): # object is already a word in python
+
         self.objects.append(_object)
 
     def update(self):
+
         self.per_frame()
+        
         for _object in self.objects:
             _object.update(self.surface)
 
