@@ -14,9 +14,6 @@ class inn(Scene):
         self.bg = Image((0,0),"Scenes/Images/innUI.png")
         self.add_object(self.bg)
 
-    def buy(self):
-        pass
-
     def rest(self):
 
         self.reset_text()
@@ -60,7 +57,6 @@ lot to toil these days.\"""")
         dialogue_options = [dialogue1,dialogue2,dialogue3,dialogue4,dialogue5,dialogue6,
                             dialogue7,dialogue8,dialogue9,dialogue10,dialogue11,dialogue12]
         
-        #self.dialogue.set_text(random.choice(dialogue_options))
         self.dialogue = random.choice(dialogue_options)
         
         self.dialogue= self.dialogue.split("\n")
