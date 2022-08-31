@@ -6,4 +6,7 @@
 ### Add: A commit for adding files that don't affect the codebase
 
 # Python Style:
-### TBD
+### Functions to be written in the following way:
+### Func(arg1,
+###      arg2,
+###      ....)
