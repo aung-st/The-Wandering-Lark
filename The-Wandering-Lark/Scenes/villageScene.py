@@ -2,8 +2,11 @@ from .Scene import Scene
 from .Objects import *
 
 class villageScene(Scene):
+
     def __init__(self, surface):
+
         super().__init__(surface)
+
         story = """
         You wake up, except you're laying down on a bed. A soft, comfy bed. The last 
         time you found yourself feeling any semblence of comfort would have been in 
@@ -46,8 +49,6 @@ class villageScene(Scene):
             self.add_object(Text((5,y), line, font_size=20, align = "left"))
             y += line_gap
         
-
-
     def press(self, key):
         if key == pygame.K_RETURN:
             self.change_scene("caerham")
