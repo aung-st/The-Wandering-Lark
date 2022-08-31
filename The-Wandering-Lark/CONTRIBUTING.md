@@ -7,7 +7,9 @@
 ### Remove: A commit for removing files or features
 
 # Python Style:
+<pre>
 ### Functions to be written in the following way:
 ### Func(arg1,
 ###      arg2,
 ###      ....)
+</pre>
