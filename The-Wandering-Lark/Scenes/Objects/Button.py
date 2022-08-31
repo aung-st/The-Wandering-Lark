@@ -1,12 +1,21 @@
-import pygame
 from .Object import Object
 from .Text import Text
 
+import pygame
+
+
 class Button(Object):
-    def __init__(self, pos, text, on_click=lambda:None, *args, background=()):
+    
+    def __init__(self,
+                 pos,
+                 text,
+                 on_click = lambda: None,
+                 *args,
+                 background=()):
+        
         # on_click is the function that gets called when clicking the button
-        # args are parameters passed to on_click (can work without this, idk which is best)
-        # Todo: background is (r,g,b) if provided. Makes visable box
+        # Args are parameters passed to on_click (can work without this, idk which is best)
+        # Todo: make background (r,g,b) if provided. Makes visable box
         super().__init__(pos)
         
         self.on_click = on_click
@@ -14,18 +23,23 @@ class Button(Object):
         
         self.text = Text(pos, text)
     
-    def update(self, surface):
+    def update(self,
+               surface):
+        
         self.text.update(surface)
 
-    def is_mouse_over(self, position):
+    def is_mouse_over(self,
+                      position):
+        
         return self.text.is_mouse_over(position)
+
 
 if __name__ == "__main__":
     pygame.init()
     screen = pygame.display.set_mode((720,600))
-    main_font = pygame.font.SysFont("cambria",50)
+    main_font = pygame.font.SysFont("cambria", 50)
 
-    button = Button(300,300,"Balls")
+    button = Button(300, 300, "Test text")
     running = True
     while running:
         for event in pygame.event.get():
