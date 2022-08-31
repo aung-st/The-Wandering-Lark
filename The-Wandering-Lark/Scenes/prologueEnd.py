@@ -2,8 +2,11 @@ from .Scene import Scene
 from .Objects import *
 
 class prologueEnd(Scene):
+
     def __init__(self, surface):
+
         super().__init__(surface)
+
         story = """
         You have now successfully fended yourself from the pack of goblins with your
         life intact. The fatigue punches you again in no time. You carry on making your way 
@@ -35,6 +38,7 @@ class prologueEnd(Scene):
         You notice blood dripping on the floor, "Ah that explains it...", and pass out yet again. 
         The last thing you heard was the man's raucous laughter. 
         """
+        
         story = story.split("\n")
         line_gap = 20
         y = 5
@@ -43,8 +47,6 @@ class prologueEnd(Scene):
             self.add_object(Text((0,y), line, font_size=20, align = "left"))
             y += line_gap
         
-
-
     def press(self, key):
         if key == pygame.K_RETURN:
             self.change_scene("villageScene")
