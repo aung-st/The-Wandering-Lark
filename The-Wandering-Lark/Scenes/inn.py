@@ -81,9 +81,8 @@ lot to toil these days.\"""")
             self.reset_text()
             self.chat()
         elif key == pygame.K_2:
-            pass #buy
-        elif key == pygame.K_3:
             self.rest()
-        elif key == pygame.K_4:
+        elif key == pygame.K_3:
             self.reset_text()
             self.change_scene("caerham")
+       
