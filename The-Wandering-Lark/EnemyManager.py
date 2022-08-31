@@ -15,7 +15,7 @@ class EnemyManager():
         orc = Orc()
         enemies = []
         enemies.append(goblin)
-        enemies.append(orc)
+        #enemies.append(orc)
         
         return enemies
 
