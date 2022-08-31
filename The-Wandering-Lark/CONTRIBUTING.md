@@ -16,4 +16,6 @@ Functions to be written in the following way:
 Func(arg1,
      arg2,
      ....)
+     
+Otherwise when in doubt, follow PEP 8
 </pre>
