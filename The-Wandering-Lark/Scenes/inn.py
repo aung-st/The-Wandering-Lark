@@ -3,7 +3,9 @@ from .Objects import *
 import random
 class inn(Scene):
 
-    def __init__(self, surface,player):
+    def __init__(self, 
+                 surface,
+                 player):
 
         super().__init__(surface)
 
@@ -28,10 +30,6 @@ class inn(Scene):
                 self.player.hp = self.player.max_hp  
         else:
             self.add_object(Text((130,285), "You don't need any rest yet.", font_size=20, align="left"))
-
-
-
-
 
     def chat(self): 
 
@@ -67,9 +65,12 @@ lot to toil these days.\"""")
             y += line_gap
         
     def reset_text(self):
+
         self.add_object(Rectangle(pos = (130,275), size = (445,135), colour =(0,0,0)))
 
-    def press(self, key):
+    def press(self, 
+              key):
+
         if key == pygame.K_1:
             self.reset_text()
             self.chat()
