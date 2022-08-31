@@ -3,7 +3,8 @@ from .Objects import *
 
 class villageScene(Scene):
 
-    def __init__(self, surface):
+    def __init__(self, 
+                 surface):
 
         super().__init__(surface)
 
@@ -49,6 +50,8 @@ class villageScene(Scene):
             self.add_object(Text((5,y), line, font_size=20, align = "left"))
             y += line_gap
         
-    def press(self, key):
+    def press(self, 
+              key):
+
         if key == pygame.K_RETURN:
             self.change_scene("caerham")
