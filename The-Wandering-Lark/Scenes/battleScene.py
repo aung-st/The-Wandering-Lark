@@ -36,7 +36,6 @@ class battleScene(Scene):
         self.playerStats()
         self.enemyStats()
         self.info_messages()
-        #self.inventory()
 
 
     def playerStats(self):
@@ -69,8 +68,7 @@ class battleScene(Scene):
         self.add_object(Text((365,440),"Options", font_size=25))
         self.add_object(Text((360,480),"1: Attack", font_size=30))
         self.add_object(Text((360,510),"2: Defend", font_size=30))
-        self.add_object(Text((360,540),"3: Inventory", font_size=30))
-        self.add_object(Text((360,570),"4: Run", font_size=30))
+        self.add_object(Text((360,540),"3: Run", font_size=30))
 
     
 
@@ -156,33 +154,8 @@ class battleScene(Scene):
 
         return self.active
 
-    #A system will need to be implemented at a future date
-    def inventory(self):
-        # A list like the following:
-        # ["-","-",...]
 
-        self.add_object(Text((360,240), f"Inventory", font_size = 20))
-
-        line_gap = 20
-        y = 270
         
-        self.Inventory[0] = Healing_Potion()
-        self.Inventory[7] = "bills"
-        self.Inventory[4] = "bells"
-        display_inventory = self.Inventory
-        display_inventory[0] = display_inventory[0].name
-
-        for i in range(5):
-            self.add_object(Text((260,y), f"{self.Inventory[i]}", font_size=20))
-            self.add_object(Text((450,y), f"{self.Inventory[i+1]}", font_size=20,))
-
-            y += line_gap
-        
-        
-    def prompt_use(self):
-        self.add_object(Button((400,390),"Y"))
-        self.add_object(Button((460,390),"N"))
-
         
         
 
@@ -266,38 +239,7 @@ class battleScene(Scene):
                 self.defend()
             elif key == pygame.K_r:
                 self.run()
-            elif key == pygame.K_1:
-                if self.Inventory[0] != "-":
-                    self.prompt_use()
-                    self.inventory_prompt.set_text(f"Use {self.Inventory[0]}?")
-            elif key == pygame.K_2:
-                if self.Inventory[1] != "-":
-                    self.inventory_prompt.set_text(f"Use {self.Inventory[1]}?")
-            elif key == pygame.K_3:
-                if self.Inventory[2] != "-":
-                    self.inventory_prompt.set_text(f"Use {self.Inventory[2]}?")
-            elif key == pygame.K_4:
-                if self.Inventory[3] != "-":
-                    self.inventory_prompt.set_text(f"Use {self.Inventory[3]}?")
-            elif key == pygame.K_5:
-                if self.Inventory[4] != "-":
-                    self.inventory_prompt.set_text(f"Use {self.Inventory[4]}?")
-            elif key == pygame.K_6:
-                if self.Inventory[5] != "-":
-                    self.inventory_prompt.set_text(f"Use {self.Inventory[5]}?")
-            elif key == pygame.K_7:
-                if self.Inventory[6] != "-":
-                    self.inventory_prompt.set_text(f"Use {self.Inventory[6]}?")
-            elif key == pygame.K_8:
-                if self.Inventory[7] != "-":
-                    self.inventory_prompt.set_text(f"Use {self.Inventory[7]}?")
-            elif key == pygame.K_9:
-                if self.Inventory[8] != "-":
-                    self.inventory_prompt.set_text(f"Use {self.Inventory[8]}?")
-            elif key == pygame.K_0:
-                if self.Inventory[9] != "-":
-                    self.inventory_prompt.set_text(f"Use {self.Inventory[9]}?")
-          
+         
 
                 
                 
