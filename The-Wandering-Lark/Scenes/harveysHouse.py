@@ -6,7 +6,7 @@ class harveysHouse(Scene):
         super().__init__(surface)
 
         #Background image
-        self.bg = Image((0,0),"Scenes/Objects/harveysUI.png")
+        self.bg = Image((0,0),"Scenes/Images/harveysUI.png")
         self.add_object(self.bg)
 
     def chat(self): 

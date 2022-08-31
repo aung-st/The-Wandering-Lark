@@ -6,7 +6,7 @@ class caerham(Scene):
         super().__init__(surface)
 
         #Background image
-        self.bg = Image((0,0),"Scenes/Objects/villageUI.png")
+        self.bg = Image((0,0),"Scenes/Images/villageUI.png")
         self.add_object(self.bg)
 
         #Initialize optional dialogue

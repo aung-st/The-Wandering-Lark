@@ -9,7 +9,7 @@ class inn(Scene):
         self.player = player
 
         #Background image
-        self.bg = Image((0,0),"Scenes/Objects/innUI.png")
+        self.bg = Image((0,0),"Scenes/Images/innUI.png")
         self.add_object(self.bg)
 
         #Initialize optional dialogue

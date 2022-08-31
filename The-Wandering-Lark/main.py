@@ -1,10 +1,12 @@
-import pygame
 from Scenes import *
 from Entities import Player
 
+import pygame
+
+
 def main():
     pygame.init()
-    pygame.display.set_caption('shittyroguelike')
+    pygame.display.set_caption("The Wandering Lark")
     
     resolution = (720,600)
     surface = pygame.display.set_mode(resolution)
@@ -12,13 +14,13 @@ def main():
     scenes = {"main menu": menuScene(surface),
               "begin": beginScene(surface),
               "prologue": prologueScene(surface),
-              "prologueFight": prologueFight(surface,5,player),
+              "prologueFight": prologueFight(surface, 5, player),
               "prologueEnd": prologueEnd(surface),
               "villageScene": villageScene(surface),
               "caerham": caerham(surface),
               "gameoverScene": gameoverScene(surface),
-              "inn": inn(surface,player),
-              "patrol": patrol(surface,5,player),
+              "inn": inn(surface, player),
+              "patrol": patrol(surface, 5, player),
               "harveys": harveysHouse(surface),
               "howToScene": howToScene(surface),
               "credits": credits(surface)}
@@ -26,7 +28,7 @@ def main():
     current_scene = scenes["main menu"]    
     running = True
     while running:
-        surface.fill((0, 0, 0))
+        surface.fill((0,0,0))
         current_scene.update()
         pygame.display.update()
 
