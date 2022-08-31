@@ -1,3 +1,4 @@
+# Import all scenes
 from .menuScene import menuScene
 from .beginScene import beginScene
 from .prologueScene import prologueScene
