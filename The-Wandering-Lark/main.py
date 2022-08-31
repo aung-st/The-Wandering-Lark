@@ -1,16 +1,17 @@
 from Scenes import *
 from Entities import Player
-
 import pygame
 
-
 def main():
+
     pygame.init()
-    pygame.display.set_caption("The Wandering Lark")
+    pygame.display.set_caption("The Wandering Lark") #Game Title on popup Screenn
     
     resolution = (720,600)
     surface = pygame.display.set_mode(resolution)
+   
     player = Player("Caleb")
+
     scenes = {"main menu": menuScene(surface),
               "begin": beginScene(surface),
               "prologue": prologueScene(surface),
@@ -27,6 +28,7 @@ def main():
     
     current_scene = scenes["main menu"]    
     running = True
+
     while running:
         surface.fill((0,0,0))
         current_scene.update()
@@ -51,6 +53,5 @@ def main():
                 
     pygame.quit()
     
-
 if __name__ == "__main__":
     main()
