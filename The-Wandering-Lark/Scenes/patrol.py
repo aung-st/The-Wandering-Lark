@@ -4,10 +4,14 @@ import random
 
 class patrol(battleScene):
 
-    def __init__(self, surface,total_enemies,player):
+    def __init__(self, 
+                 surface,
+                 total_enemies,
+                 player):
 
-        super().__init__(surface, total_enemies,player,"caerham")
-
+        super().__init__(surface, 
+                         total_enemies,player,
+                         "caerham")
 
     def run(self):
 
