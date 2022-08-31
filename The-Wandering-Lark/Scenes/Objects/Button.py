@@ -11,7 +11,7 @@ class Button(Object):
                  text,
                  on_click = lambda: None,
                  *args,
-                 background=()):
+                 background = ()):
         
         # on_click is the function that gets called when clicking the button
         # Args are parameters passed to on_click (can work without this, idk which is best)

@@ -138,8 +138,6 @@ class battleScene(Scene):
             self.enemy_msg.set_text(f"{self.enemy.name} deals {enemy} damage!")
             self.check_player_dead()
 
-
-
     """
     This method is supposed to reduce how much damage the player takes
     by a fixed percentage for 3 turns

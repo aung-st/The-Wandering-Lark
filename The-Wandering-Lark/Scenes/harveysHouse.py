@@ -35,7 +35,6 @@ we were little. So now it's just me
 and Harvey.\""""
         
 
-
         # Return all dialogue options as a list 
         dialogue_options = [dialogue1, dialogue2,
                             dialogue3, dialogue4,

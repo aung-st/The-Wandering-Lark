@@ -1,6 +1,7 @@
 import random
 from math import ceil
 
+
 class Entity():
     
     def __init__(self,

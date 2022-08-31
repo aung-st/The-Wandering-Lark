@@ -9,9 +9,7 @@ class prologueFight(battleScene):
                  total_enemies,
                  player):
 
-        super().__init__(surface, 
-                         total_enemies,player, 
-                         "prologueEnd")
+        super().__init__(surface, total_enemies, player, "prologueEnd")
 
     
 

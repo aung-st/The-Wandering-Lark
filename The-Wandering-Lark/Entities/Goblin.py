@@ -1,5 +1,6 @@
 from .Enemy import Enemy
 
+
 class Goblin(Enemy):
     
     def __init__(self):

@@ -1,6 +1,7 @@
 from .Scene import Scene
 from .Objects import *
 
+
 class menuScene(Scene):
     
     def __init__(self, 
@@ -16,13 +17,18 @@ class menuScene(Scene):
         self.add_object(Button((360,340), "Quit", self.quit))
 
     def start(self):
+
+        # Isn't used because start button calls self.change_scene directly
         self.change_screen("begin")
 
     def how_to_play(self):
+        
         self.change_scene("howToScene")
 
     def credits(self):
+        
         self.change_scene("credits")
 
     def quit(self):
+        
         self.exit = True

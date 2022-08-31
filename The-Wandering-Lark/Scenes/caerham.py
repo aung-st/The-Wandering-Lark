@@ -23,25 +23,25 @@ class caerham(Scene):
     def chat(self):
         
         # Dialogue text options
-        self.dialogue1 = ("Farmer: \"I farm!\"")
-        self.dialogue2 = ("Farmer: \"It's almost harvesting season!\"")
-        self.dialogue3 = ("""Farmer: \"Every year our yield just gets worse.
-There'll come a day when we are all going to starve.\"""")
-        self.dialogue4 = ("""Villager: \"Harvey's a weird lad for sure,
-but at least with him around we feel a bit safer.\"""")
-        self.dialogue5 = ("""Villager: \"Welcome to Caerham! I'm afraid if it's a 
-fortune that you seek, then this is the wrong place for it.\"""")
-        self.dialogue6 = ("""Harvey: \"I can just sense those damn goblins...
+        self.dialogue1 = "Farmer: \"I farm!\""
+        self.dialogue2 = "Farmer: \"It's almost harvesting season!\""
+        self.dialogue3 = """Farmer: \"Every year our yield just gets worse.
+There'll come a day when we are all going to starve.\""""
+        self.dialogue4 = """Villager: \"Harvey's a weird lad for sure,
+but at least with him around we feel a bit safer.\""""
+        self.dialogue5 = """Villager: \"Welcome to Caerham! I'm afraid if it's a 
+fortune that you seek, then this is the wrong place for it.\""""
+        self.dialogue6 = """Harvey: \"I can just sense those damn goblins...
 scuttling around those woods there. But now that you're 
-here we can finally show them not to mess with us eh?\"""")
-        self.dialogue7 = ("""Villager: \"We may not have much here but every 
+here we can finally show them not to mess with us eh?\""""
+        self.dialogue7 = """Villager: \"We may not have much here but every 
 last person living here has a roof under their head, 
 and food on the table. For how much longer? That, 
-I don't want to know or think about.\"""")
-        self.dialogue8 = ("""Traveller: \"Nice to see a fellow traveller here!
+I don't want to know or think about.\""""
+        self.dialogue8 = """Traveller: \"Nice to see a fellow traveller here!
 I'm headed to the Gevelian Capital once I've finished
 resting up. I hope your journey won't be perilous, 
-although that is a rare thing these days.\"""")
+although that is a rare thing these days.\""""
 
         # Return all dialogue options as a list 
         dialogue_options = [self.dialogue1, self.dialogue2,

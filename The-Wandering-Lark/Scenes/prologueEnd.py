@@ -1,6 +1,7 @@
 from .Scene import Scene
 from .Objects import *
 
+
 class prologueEnd(Scene):
 
     def __init__(self, 
@@ -45,9 +46,11 @@ class prologueEnd(Scene):
         y = 5
 
         for line in story:
-            self.add_object(Text((0,y), line, font_size=20, align = "left"))
+            self.add_object(Text((0,y), line, font_size = 20, align = "left"))
             y += line_gap
         
-    def press(self, key):
+    def press(self,
+              key):
+        
         if key == pygame.K_RETURN:
             self.change_scene("villageScene")
