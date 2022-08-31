@@ -36,7 +36,7 @@ class battleScene(Scene):
         self.playerStats()
         self.enemyStats()
         self.info_messages()
-        self.inventory()
+        #self.inventory()
 
 
     def playerStats(self):
