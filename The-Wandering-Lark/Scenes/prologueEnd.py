@@ -3,7 +3,8 @@ from .Objects import *
 
 class prologueEnd(Scene):
 
-    def __init__(self, surface):
+    def __init__(self, 
+                 surface):
 
         super().__init__(surface)
 
