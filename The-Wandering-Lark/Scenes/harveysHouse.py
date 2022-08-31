@@ -11,13 +11,21 @@ class harveysHouse(Scene):
 
     def chat(self): 
         #dialogue text options
-        dialogue1 = ("Harvey: Hello.\"\"")
-        dialogue2 = ("Harvey: No goblins here I see.\"\"")
-        dialogue3 = ("Harvey: I need to get a new pitchfork\"\"")
-        dialogue4 = ("Harvey: \"\"")
-        dialogue5 = ("Harvey: \"\"")
-        dialogue6 = ("Harvey: \"\"")
-        dialogue7 = ("""Harvey: \"\"""")
+        dialogue1 = ("Harvey: \"Hello.\"")
+        dialogue2 = ("Harvey: \"No goblins here I see.\"")
+        dialogue3 = ("Harvey: \"I need a new pitchfork.\"")
+        dialogue4 = ("""Amy: \"Oh hello there. I'm Harvey's
+sister.\"""")
+        dialogue5 = ("""Amy: \"I wasn't sure if you were going 
+to make it. Those were some terrible 
+injuries. You're really lucky to have 
+made it out alive from those goblins.\"""")
+        dialogue6 = ("""Harvey: \"Oh I forgot to mention
+my sister amy! My memory isn't what  
+it used to be!\"""")
+        dialogue7 = ("""Amy: \"Our parents passed when
+we were little. So now it's just me 
+and Harvey.\"""")
         
 
 
@@ -29,13 +37,13 @@ class harveysHouse(Scene):
         
         self.dialogue= self.dialogue.split("\n")
         line_gap = 20
-        y = 395
+        y = 285
         for line in self.dialogue:
-            self.add_object(Text((165,y), line, font_size=20, align="left"))
+            self.add_object(Text((205,y), line, font_size=20, align="left"))
             y += line_gap
 
     def reset_text(self):
-        self.add_object(Rectangle(pos = (165,385), size = (360,95), colour =(0,0,0)))
+        self.add_object(Rectangle(pos = (205,270), size = (305,175), colour =(0,0,0)))
 
     def press(self, key):
         if key == pygame.K_1:
