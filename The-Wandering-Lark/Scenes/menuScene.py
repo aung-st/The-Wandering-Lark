@@ -3,6 +3,7 @@ from .Objects import *
 
 class menuScene(Scene):
     def __init__(self, surface):
+        
         super().__init__(surface)
 
         self.add_object(Text((360,75), "MAIN MENU"))
