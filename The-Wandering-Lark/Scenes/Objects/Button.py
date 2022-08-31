@@ -34,23 +34,6 @@ class Button(Object):
         return self.text.is_mouse_over(position)
 
 
-if __name__ == "__main__":
-    pygame.init()
-    screen = pygame.display.set_mode((720,600))
-    main_font = pygame.font.SysFont("cambria", 50)
 
-    button = Button(300, 300, "Test text")
-    running = True
-    while running:
-        for event in pygame.event.get():
-            if event.type == pygame.QUIT:
-                pygame.quit()
-                running = False
-            if event.type == pygame.MOUSEBUTTONDOWN:
-                button.check_for_input(pygame.mouse.get_pos())
-            
-            screen.fill("Black")
-            button.update()
-            pygame.display.update()
     
     
